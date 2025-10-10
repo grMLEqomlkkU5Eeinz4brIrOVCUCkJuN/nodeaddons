@@ -1,13 +1,22 @@
 {
   "name": "cppintegrations",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
-    "build": "node-gyp rebuild",
+    "build": "npm run build:native && npm run build:ts",
+    "build:native": "node-gyp rebuild",
+    "build:ts": "tsc",
     "build:debug": "node-gyp rebuild --debug",
-    "clean": "node-gyp clean",
-    "dev": "npm run build && nodemon lib/index.ts",
-    "test": "npm run build && node -r ts-node/register test/test.ts",
+    "clean": "node-gyp clean && rimraf dist",
+    "dev": "npm run build && nodemon dist/index.js",
+    "test": "npm run build && node test/test.js",
     "format:cc": "find . -name \"*.cc\" -exec clang-format -i {} \\;",
     "format:all": "find . \\( -name \"*.cc\" -o -name \"*.cpp\" -o -name \"*.h\" \\) -exec clang-format -i {} \\;",
     "format": "find . \\( -name \"*.cc\" -o -name \"*.cpp\" -o -name \"*.h\" \\) -exec clang-format -i {} \\;"

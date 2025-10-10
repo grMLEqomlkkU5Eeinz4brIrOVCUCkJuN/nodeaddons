@@ -10,6 +10,7 @@ export default [
 			quotes: ["error", "double"],
 			indent: ["error", "tab"],
 			"no-tabs": "off",
+			"@typescript-eslint/no-var-requires": "off",
 		},
 	}
 ];
