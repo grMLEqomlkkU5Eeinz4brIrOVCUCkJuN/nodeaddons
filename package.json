@@ -34,7 +34,7 @@
     "node-api-headers": "^1.7.0",
     "nodemon": "^3.1.11",
     "rimraf": "^6.1.2",
-    "ts-jest": "^29.4.1",
+    "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
     "tsup": "^8.5.1",
     "typescript": "^5.9.2",
