@@ -19,6 +19,10 @@ pids
 # Coverage directory used by tools like istanbul
 coverage/
 
+# Environment
+.env
+.env.*
+
 # OS generated files
 .DS_Store
 .DS_Store?
