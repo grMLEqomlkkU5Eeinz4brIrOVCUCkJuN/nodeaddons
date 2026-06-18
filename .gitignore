@@ -3,6 +3,13 @@ dist/
 build/
 *.node
 
+# Generated API docs
+docs/
+
+# Tooling caches / packs
+.eslintcache
+*.tgz
+
 # Dependencies
 node_modules/
 

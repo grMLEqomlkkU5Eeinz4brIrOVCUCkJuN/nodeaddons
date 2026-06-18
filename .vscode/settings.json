@@ -1,4 +1,17 @@
 {
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.tabSize": 4,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"eslint.useFlatConfig": true,
+	"[typescript]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
 	"C_Cpp_Runner.cCompilerPath": "/usr/bin/clang",
 	"C_Cpp_Runner.cppCompilerPath": "/usr/bin/clang++",
 	"C_Cpp_Runner.debuggerPath": "/usr/bin/lldb",
